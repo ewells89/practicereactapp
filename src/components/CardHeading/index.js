@@ -2,10 +2,10 @@ import React from "react";
 import CardTitle from "../CardTitle";
 import "./style.css";
 
-function CardHeading() {
+function CardHeading(props) {
   return ( 
     <div>
-      <CardTitle />
+      <CardTitle title={props.login}/>
     </div> 
   );
 }

@@ -2,11 +2,13 @@ import React from "react";
 import Card from "../Card";
 import "./style.css";
 
-function CardContainer() {
+function CardContainer(props) {
   return (
     <div className="jumbotron card-container">
       {/* Pass props to Card */}
-      <Card />
+      <Card user={props.user} />
+      {/* OR */}
+      {/* <Card {...props} /> */}
     </div>
   );
 }
